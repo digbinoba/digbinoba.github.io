@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html class="full" lang="en">
+<!-- Make sure the <html> tag is set to the .full CSS class. Change the background image in the full.css file. -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>LITerature</title>
+    <!--Load Parse-->
+    <script type="text/javascript" src="http://www.parsecdn.com/js/parse-latest.js"></script>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/StartSession.css" rel="stylesheet">
+    <!--Add In custom Gooogle Font-->
+    <link href='https://fonts.googleapis.com/css?family=Quicksand' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Services</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <!-- Page Content -->
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <center><img src="C:\Users\Delano\Desktop\HackDuke\startbootstrap-the-big-picture-1.0.3\assests\imageedit_1_4590591911.gif" /></center>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, iusto, unde, sunt incidunt id sapiente rerum soluta voluptate harum veniam fuga odit ea pariatur vel eaque sint sequi tenetur eligendi.</p>
+            </div>
+        </div>
+    </div>
+    <!--Insert BOok thingy-->
+    <div class="row">
+        <div class="col-xs-6 col-md-3">
+            <a href="#" class="thumbnail">
+                <img src="https://placeholdit.imgix.net/~text?txtsize=33&txt=350%C3%97350&w=350&h=350" alt="...">
+            </a>
+        </div>
+    </div>
+    
+        <div class="btn-group">
+            <button type="button" class="btn btn-info" data-toggle="modal" data-target="#Submit">New Book</button>
+            <a href="C:\Users\Delano\Desktop\_literature\public\StartSession.html"><button type="button" class="btn btn-info" data-toggle="modal" data-target="#Submit">Back to Genre</button></a>
+
+        </div>
+    </div>
+
+    <div id="content"></div>
+    <script>
+      function handleResponse(response) {
+      for (var i = 0; i < 1; i++) {
+        var item = response.items[i];
+        // in production code, item.text should have the HTML entities escaped.
+        document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.title;
+        document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.authors;
+        document.getElementById("content").innerHTML += "<br>" + item.volumeInfo.description;
+        document.getElementById("content").innerHTML += "<br>" + "<img src=\"" + item.volumeInfo.imageLinks.thumbnail + "\" >";
+
+      }
+    }
+    </script>
+
+    <script>
+        function callScr(str){
+            <script src = str>;
+        }
+    </script>
+
+    <script>
+        var rand = Math.floor(Math.random() * 26) + 1;
+        if(rand > 13){
+            <script src="https://www.googleapis.com/books/v1/volumes?q=cat&callback=handleResponse">
+        }
+        else{
+            <script src="https://www.googleapis.com/books/v1/volumes?q=harry+potter&callback=handleResponse">
+        }
+    </script>
+
+</body>
+</html>
+<!-- /.container -->
+<!-- jQuery -->
+<script src="js/jquery.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
