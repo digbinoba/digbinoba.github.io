@@ -5,7 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import { useState } from "react";
 import { useEffect } from "react";
 import logo from "../assets/img/logo.png";
-import resume from "../assets/files/Resume_2_0-5.pdf";
+import resume from "../assets/files/Resume.pdf";
 
 export default function NavBar() {
   const [activeLink, setActiveLink] = useState("home");

@@ -7,7 +7,9 @@ export const ProjectCard = ({
   tags,
   caseStudyLink,
   liveDemoLink,
-}) => {
+}) => {    
+  console.log(thumbnail);
+
   return (
     <Col size={12} sm="auto" md="auto" lg={6} xl={6} xxl={4}>
       <Card style={{ width: "25rem" }} className="card-styling">

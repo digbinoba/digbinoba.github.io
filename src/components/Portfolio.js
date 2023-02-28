@@ -1,7 +1,7 @@
 import { Col, Container, Row, Nav, Tab } from "react-bootstrap";
 import colorSharp2 from "../assets/img/color-sharp2.png";
 import { ProjectCard } from "./ProjectCard";
-import projects from "../assets/files/projects.json";
+import { projects } from "../assets/files/projects";
 export const Portfolio = () => {
   /* TO DO: Integrate with firebase to capture projects from db */
   return (

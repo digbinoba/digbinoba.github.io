@@ -1,6 +1,6 @@
 import { Container, Row, Col } from "react-bootstrap";
 import headshot from "../assets/img/headshot.JPG";
-import resume from "../assets/files/Resume_2_0-5.pdf";
+import resume from "../assets/files/Resume.pdf";
 export const About = () => {
   return (
     <section className="about" id="about">
@@ -30,9 +30,9 @@ export const About = () => {
             <Row>
               <Col md={6} xs="auto">
                 <ul>
-                  <li>JavaScript (ES6+)</li>
-                  <li>TypeScript</li>
+                  <li>JavaScript / TypeScript (ES6+)</li>
                   <li>React</li>
+                  <li>React Native</li>
                   <li>Node.js</li>
                 </ul>
               </Col>
