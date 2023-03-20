@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "Imagine AI",
+    projectType: "App",
+    thumbnail: "/project-img/imagine-ai.png",
+    tags: ["MongoDB", "Express", "React", "Node.js", "Tailwind CSS"],
+    details:
+      "An online platform where users can create AI generated images to share with others.",
+    liveDemoLink: "https://deft-bombolone-6768a1.netlify.app/",
+  },
+  {
     title: "Hi Score",
     projectType: "UX/UI",
     thumbnail: "/project-img/hi-score-thumb.png",
