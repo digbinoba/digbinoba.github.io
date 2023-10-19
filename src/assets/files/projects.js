@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "3D Product Customizer",
+    projectType: "App",
+    thumbnail: "/project-img/3D-product-thumb.png",
+    tags: ["Three JS", "React", "Express", "Node.js", "Tailwind CSS", "OpenAI"],
+    details:
+      "Customize your own 3D products with AI image generation capabilities!",
+    liveDemoLink: "https://guileless-crisp-9467c6.netlify.app/",
+  },
+  {
     title: "Imagine AI",
     projectType: "App",
     thumbnail: "/project-img/imagine-ai.png",
