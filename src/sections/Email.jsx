@@ -5,15 +5,12 @@ import { slideInFromTop } from '../utils/motion';
 import { PhoneIcon } from '@heroicons/react/24/solid';
 import emailjs from '@emailjs/browser';
 const Email = () => {
-  const [emailSubmitted, setEmailSubmitted] = useState(false);
   const formRef = useRef();
   const [error, setError] = useState(false);
   const [success, setSuccess] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log(process.env.SERVICE_ID);
-    const templateParams = {};
     emailjs
       .sendForm(
         process.env.REACT_APP_SERVICE_ID,
