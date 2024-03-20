@@ -1,23 +1,21 @@
 import React from "react";
-import NavBar from "./components/NavBar";
-import "bootstrap/dist/css/bootstrap.min.css";
-import './App.css'
-import { Banner } from "./components/Banner";
-import { Skills } from "./components/Skills";
-import { Portfolio } from "./components/Portfolio";
-import { Contact } from "./components/Contact";
-import { Footer } from "./components/Footer";
-import { About } from "./components/About";
-
+import NavBar from "./sections/Navbar"
+import Hero from "./sections/Hero";
+import About from "./sections/About";
+import Experience from "./sections/Experience";
+import Skills from "./sections/Skills";
+import Projects from "./sections/Projects";
+import Email from "./sections/Email";
 export default function App() {
-  return(
+  return (
     <main>
       <NavBar />
-      <Banner />
+      <Hero />
       <About />
-      <Portfolio />
-      <Contact />
-      <Footer />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Email />
     </main>
-  )
+  );
 }
