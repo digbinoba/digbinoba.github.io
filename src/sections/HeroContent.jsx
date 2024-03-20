@@ -5,6 +5,7 @@ import { motion } from 'framer-motion';
 import {
   slideInFromLeft,
 } from '../utils/motion';
+import resume from './resume.pdf'
 const HeroContent = () => {
   return (
     <motion.div
@@ -44,6 +45,7 @@ const HeroContent = () => {
             <motion.a
               variants={slideInFromLeft(1)}
               className="p-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] min-w-[150px]"
+              href={resume}
             >
               Resume
             </motion.a>
